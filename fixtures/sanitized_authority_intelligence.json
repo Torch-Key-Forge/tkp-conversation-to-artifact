@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "structured_authority_ledger": [
+    {"ledger_id":"AUTH-001","decision_class":"AUTHORIZATION","statement":"AUTHORIZE_ATLAS_LOCAL_READ_ONLY_ARTIFACT_COMPOSER_WITH_SOURCE_TRACE_AND_CHECKSUMS","authority_status":"CANONICAL_STRUCTURED_COMMAND","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0004"]},
+    {"ledger_id":"AUTH-002","decision_class":"AUTHORIZATION","statement":"AUTHORIZE_ATLAS_MANIFEST_AND_PORTABLE_ZIP_PACKAGE","authority_status":"CANONICAL_STRUCTURED_COMMAND","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0008"]},
+    {"ledger_id":"AUTH-003","decision_class":"ACCEPTANCE","statement":"ACCEPT_ATLAS_FIXTURE_TESTED_ARTIFACT_BASELINE","authority_status":"CANONICAL_STRUCTURED_COMMAND","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0009"]}
+  ],
+  "natural_language_review_queue": [
+    {"candidate_id":"REVIEW-001","decision_class":"SCOPE","statement":"Keep the fixture read-only and do not add cloud synchronization.","authority_status":"PROVISIONAL_REVIEW","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0003"]},
+    {"candidate_id":"REVIEW-002","decision_class":"DEFERRAL","statement":"Hold the PDF renderer. It is outside this acceptance gate.","authority_status":"PROVISIONAL_REVIEW","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0006"]},
+    {"candidate_id":"REVIEW-003","decision_class":"PROHIBITION","statement":"Production deployment remains unauthorized.","authority_status":"PROVISIONAL_REVIEW","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0010"]}
+  ],
+  "assistant_non_authority_register": [
+    {"audit_id":"AUDIT-001","decision_class":"COMPLETION_CLAIM","statement":"The implementation is complete.","authority_status":"NON_AUTHORITY_ASSISTANT_STATEMENT","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0005"]},
+    {"audit_id":"AUDIT-002","decision_class":"ACCEPTANCE","statement":"ACCEPT_ATLAS_LOCAL_ARTIFACT_BASELINE","authority_status":"NON_AUTHORITY_ASSISTANT_STATEMENT","execution_status":"NOT_INFERRED","source_refs":["SRC-TURN-0007"]}
+  ],
+  "authority_boundary": {"assistant_statements_non_authoritative":true,"execution_not_inferred_from_command":true}
+}

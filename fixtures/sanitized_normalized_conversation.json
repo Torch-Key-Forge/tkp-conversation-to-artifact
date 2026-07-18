@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "conversation_id": "PF-DEMO-ATLAS-COMPOSER-001",
+  "title": "Atlas Workshop — Artifact Composition Fixture",
+  "turns": [
+    {"turn_id":"TURN-0001","ordinal":1,"role":"user","content_blocks":[{"block_type":"markdown","text":"Build a local research intake prototype that preserves exact source evidence."}],"classifications":["spine"],"source_refs":["SRC-TURN-0001"]},
+    {"turn_id":"TURN-0002","ordinal":2,"role":"assistant","content_blocks":[{"block_type":"markdown","text":"A local read-only design can produce separate project artifacts."}],"classifications":[],"source_refs":["SRC-TURN-0002"]},
+    {"turn_id":"TURN-0003","ordinal":3,"role":"user","content_blocks":[{"block_type":"markdown","text":"Keep the fixture read-only and do not add cloud synchronization."}],"classifications":["scope"],"source_refs":["SRC-TURN-0003"]},
+    {"turn_id":"TURN-0004","ordinal":4,"role":"user","content_blocks":[{"block_type":"markdown","text":"AUTHORIZE_ATLAS_LOCAL_READ_ONLY_ARTIFACT_COMPOSER_WITH_SOURCE_TRACE_AND_CHECKSUMS"}],"classifications":["authorization"],"source_refs":["SRC-TURN-0004"]},
+    {"turn_id":"TURN-0005","ordinal":5,"role":"assistant","content_blocks":[{"block_type":"markdown","text":"The implementation is complete."}],"classifications":[],"source_refs":["SRC-TURN-0005"]},
+    {"turn_id":"TURN-0006","ordinal":6,"role":"user","content_blocks":[{"block_type":"markdown","text":"Hold the PDF renderer. It is outside this acceptance gate."}],"classifications":["decision"],"source_refs":["SRC-TURN-0006"]},
+    {"turn_id":"TURN-0007","ordinal":7,"role":"assistant","content_blocks":[{"block_type":"markdown","text":"ACCEPT_ATLAS_LOCAL_ARTIFACT_BASELINE"}],"classifications":[],"source_refs":["SRC-TURN-0007"]},
+    {"turn_id":"TURN-0008","ordinal":8,"role":"user","content_blocks":[{"block_type":"markdown","text":"AUTHORIZE_ATLAS_MANIFEST_AND_PORTABLE_ZIP_PACKAGE"}],"classifications":["authorization"],"source_refs":["SRC-TURN-0008"]},
+    {"turn_id":"TURN-0009","ordinal":9,"role":"user","content_blocks":[{"block_type":"markdown","text":"ACCEPT_ATLAS_FIXTURE_TESTED_ARTIFACT_BASELINE"}],"classifications":["acceptance"],"source_refs":["SRC-TURN-0009"]},
+    {"turn_id":"TURN-0010","ordinal":10,"role":"user","content_blocks":[{"block_type":"markdown","text":"Production deployment remains unauthorized."}],"classifications":["scope"],"source_refs":["SRC-TURN-0010"]},
+    {"turn_id":"TURN-0011","ordinal":11,"role":"user","content_blocks":[{"block_type":"markdown","text":"Next action: run an anonymous Windows clone, install, and fixture verification."}],"classifications":["next_action"],"source_refs":["SRC-TURN-0011"]},
+    {"turn_id":"TURN-0012","ordinal":12,"role":"assistant","content_blocks":[{"block_type":"markdown","text":"The return point is recorded without promoting the verification to complete."}],"classifications":[],"source_refs":["SRC-TURN-0012"]}
+  ]
+}

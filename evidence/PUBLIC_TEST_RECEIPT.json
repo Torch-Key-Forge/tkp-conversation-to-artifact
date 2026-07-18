@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "candidate": "tkp-conversation-to-artifact",
+  "status": "PASS_LOCAL_PUBLICATION_CANDIDATE",
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "fixture_run": {
+    "returncode": 0,
+    "stdout": "PASS: 8 spine entries, 3 canonical authority entries, 3 review entries, next action=True",
+    "conversation_input": "fixtures/sanitized_normalized_conversation.json",
+    "authority_input": "fixtures/sanitized_authority_intelligence.json",
+    "output": "public-output"
+  },
+  "private_corpus_included": false,
+  "private_paths_included": false,
+  "credentials_included": false,
+  "current_gate": "PUBLICATION_CANDIDATE_PUBLISHED_WINDOWS_VERIFICATION_REQUIRED"
+}

@@ -1,0 +1,19 @@
+{
+  "artifact_count": 9,
+  "assistant_non_authority_entries": 2,
+  "canonical_authority_entries": 3,
+  "conversation_id": "PF-DEMO-ATLAS-COMPOSER-001",
+  "exceptions": 0,
+  "explicit_next_action_found": true,
+  "provisional_review_entries": 3,
+  "schema_version": "0.1.0",
+  "spine_entries": 8,
+  "status": "PASS",
+  "trust_boundary": {
+    "assistant_authority_promoted": false,
+    "execution_inferred": false,
+    "provisional_authority_promoted": false,
+    "source_read_only": true
+  },
+  "zip_sha256": "9493c3ff23358cbee8f2adf95b24c8f80d430c6eb983a9fdfb71d738290fed51"
+}

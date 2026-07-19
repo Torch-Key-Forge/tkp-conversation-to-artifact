@@ -68,6 +68,10 @@ The included inputs are synthetic and sanitized. No private conversation corpus,
 
 ## Status
 
-`0.1.0-publication-candidate`
+`0.1.0-release-candidate`
 
-The candidate is runnable and locally tested. A tagged release waits for an anonymous Windows clone/install/fixture verification and final license acceptance.
+The package passed clean GitHub-hosted Windows wheel installation, CLI composition, receipt validation, and portable ZIP generation. Current gate: `RELEASE_READY_V0_1_0_TAG_PENDING`.
+
+## License
+
+Released under the MIT License. See `LICENSE`.

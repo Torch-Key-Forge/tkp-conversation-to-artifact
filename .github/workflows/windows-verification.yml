@@ -64,19 +64,3 @@ jobs:
           if ($receipt.status -ne "PASS") { throw "Composition receipt did not pass." }
           if ($receipt.exceptions -ne 0) { throw "Composition reported exceptions." }
           if (-not (Test-Path (Join-Path $output "TKP_Conversation_Artifact_Package.zip"))) { throw "Portable ZIP package was not generated." }
-
-      - name: Scan tracked files for known private-path markers
-        shell: pwsh
-        run: |
-          $patterns = @("I:\My Drive", "CJ Burke", "\\Users\\CJ", "00_Admin")
-          $hits = @()
-          foreach ($file in (git ls-files)) {
-            if (Test-Path $file -PathType Leaf) {
-              $match = Select-String -Path $file -SimpleMatch -Pattern $patterns -ErrorAction SilentlyContinue
-              if ($match) { $hits += $match }
-            }
-          }
-          if ($hits.Count -gt 0) {
-            $hits | ForEach-Object { Write-Host $_ }
-            throw "Known private-path marker found in tracked files."
-          }

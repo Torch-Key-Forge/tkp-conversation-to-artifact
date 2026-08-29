@@ -66,11 +66,33 @@ python -m tkp_conversation_to_artifact `
 
 The included inputs are synthetic and sanitized. No private conversation corpus, account export, credentials, or private filesystem paths are included.
 
-## Status
+## Current release state
 
-`0.1.0-release-candidate`
+Current public release: **v0.1.0**, published July 19, 2026.
 
-The package passed clean GitHub-hosted Windows wheel installation, CLI composition, receipt validation, and portable ZIP generation. Current gate: `RELEASE_READY_V0_1_0_TAG_PENDING`.
+- Runnable standard-library Python package and CLI: yes
+- Synthetic/sanitized public fixtures: yes
+- Automated tests: yes
+- Clean GitHub-hosted Windows verification on the release head: passed
+- CLI composition and PASS receipt verification: passed
+- Portable ZIP generation: passed
+- Separate repository privacy-marker searches: recorded with no known matches
+- Source mutation: no
+- Authority promotion beyond upstream reviewed classification: no
+
+See [PUBLICATION_READINESS.md](PUBLICATION_READINESS.md) and [WINDOWS_VERIFICATION_GATE.md](WINDOWS_VERIFICATION_GATE.md) for the bounded release evidence.
+
+## Support and security
+
+For ordinary usage questions and non-sensitive defects, see [SUPPORT.md](SUPPORT.md).
+
+For sensitive-data and security-reporting guidance, see [SECURITY.md](SECURITY.md). The repository does not currently claim a dedicated private vulnerability-reporting channel.
+
+## Product relationship and portability boundary
+
+This repository is a downstream **product component** for Project Foreman. It composes already-normalized conversation evidence and reviewed authority intelligence into a traceable project package.
+
+The generated ZIP is portable as an artifact package. That does **not** by itself prove platform or provider portability of the underlying product family. This repository does not provide a general provider/target adapter framework and does not claim multi-target platform portability.
 
 ## License
 
